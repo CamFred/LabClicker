@@ -1,0 +1,169 @@
+/* Import 8-bit style font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #0A84FF;
+    --text-color: #333; /* Darker text color for better contrast */
+    --background-color: #e0e0e0; /* Slightly darker background color */
+    --sidebar-width: 213px;
+    --game-container-max-width: 800px;
+}
+
+/* Body and General Layout */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    background-image: 
+        linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #fff; /* Ensure high contrast for general text */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Sidebar Styles */
+.game-sidebar {
+    background-image: url('sidebar1.png');
+    background-repeat: repeat-y;
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+}
+
+/* Game Container */
+.game-container {
+    max-width: var(--game-container-max-width);
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - var(--sidebar-width));
+}
+
+/* Generator Row Styles */
+.generator-row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Apply the text color for better contrast */
+}
+
+.generator-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.generator-cost {
+    white-space: nowrap;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.generator-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+/* Stats Styles */
+#stats {
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color); /* Ensure text is readable */
+}
+
+#stats p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Button Styles */
+button {
+    background-color: var(--primary-color);
+    border: 2px solid #fff;
+    color: white; /* High contrast text on buttons */
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+
+button.locked {
+    background-color: darkgray;
+}
+
+button.unlocked {
+    /* Current button styling */
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+	font-family: 'Press Start 2P', cursive;
+
+    color: var(--text-color); /* Apply the text color for better contrast */
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    color: var(--text-color); /* Apply the text color for better contrast */
+
+}

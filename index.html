@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LabClicker</title>
+        <link rel="stylesheet" href="styles.css">
 
+    <style>
+		
+
+    </style>
+</head>
+<body>
+	<div class="game-wrapper">
+		<div class="game-sidebar">
+			<!-- This will hold the sidebar image -->
+		</div>
+		<div class="game-container">
+		<h1>LabClicker</h1>
+		<div id="stats">
+			<p>Casein Micelles: <span id="caseinCount">0</span></p>
+			<p>Venture Capital: $<span id="capitalCount">0</span></p>
+		</div>
+		
+		<div class="tab">
+			<button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Lab')">Lab</button>
+			<button class="tablinks" onclick="openTab(event, 'Farm')">Farm</button>
+			<button class="tablinks" onclick="openTab(event, 'Factory')">Factory</button>
+			<button class="tablinks" onclick="openTab(event, 'Patents')">Patents</button>
+			<button class="tablinks" onclick="openTab(event, 'About')">About</button>
+		</div>
+		
+		<div id="Lab" class="tabcontent">
+		<div id="generators">
+			<!-- Add generator buttons here -->
+		</div>
+		</div>
+		
+		<div id="Farm" class="tabcontent">
+			<p>Farm content coming soon!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat suscipit efficitur. Cras bibendum lorem sit amet velit tristique aliquet. Praesent in lectus felis. Nulla faucibus libero non lectus tincidunt, et lobortis magna imperdiet. Vestibulum sapien felis, ullamcorper in pulvinar at, scelerisque vitae erat. Nunc ligula risus, porta sed felis nec, dapibus mattis dolor. Fusce quis ex sapien. Integer lectus ligula, rhoncus eget leo sit amet, dictum bibendum ante. Nunc suscipit quam in lacus interdum mattis.</p>
+			
+		</div>
+
+		<div id="Factory" class="tabcontent">
+			<p>Factory content coming soon!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat suscipit efficitur. Cras bibendum lorem sit amet velit tristique aliquet. Praesent in lectus felis. Nulla faucibus libero non lectus tincidunt, et lobortis magna imperdiet. Vestibulum sapien felis, ullamcorper in pulvinar at, scelerisque vitae erat. Nunc ligula risus, porta sed felis nec, dapibus mattis dolor. Fusce quis ex sapien. Integer lectus ligula, rhoncus eget leo sit amet, dictum bibendum ante. Nunc suscipit quam in lacus interdum mattis.</p>
+
+		</div>
+
+		<div id="Patents" class="tabcontent">
+			<p>Patents content coming soon!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat suscipit efficitur. Cras bibendum lorem sit amet velit tristique aliquet. Praesent in lectus felis. Nulla faucibus libero non lectus tincidunt, et lobortis magna imperdiet. Vestibulum sapien felis, ullamcorper in pulvinar at, scelerisque vitae erat. Nunc ligula risus, porta sed felis nec, dapibus mattis dolor. Fusce quis ex sapien. Integer lectus ligula, rhoncus eget leo sit amet, dictum bibendum ante. Nunc suscipit quam in lacus interdum mattis.</p>
+		</div>
+
+		<div id="About" class="tabcontent">
+			<p>About content goes here...</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat suscipit efficitur. Cras bibendum lorem sit amet velit tristique aliquet. Praesent in lectus felis. Nulla faucibus libero non lectus tincidunt, et lobortis magna imperdiet. Vestibulum sapien felis, ullamcorper in pulvinar at, scelerisque vitae erat. Nunc ligula risus, porta sed felis nec, dapibus mattis dolor. Fusce quis ex sapien. Integer lectus ligula, rhoncus eget leo sit amet, dictum bibendum ante. Nunc suscipit quam in lacus interdum mattis.</p>
+
+		</div>		
+		
+		<script src="autoclickerGame.js"></script>
+		</div>
+	</div>
+	
+</body>
+</html>
